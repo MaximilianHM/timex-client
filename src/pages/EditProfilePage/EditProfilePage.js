@@ -11,8 +11,6 @@ function EditProfilePage() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
-  // console.log("profile.name :>> ", profile.name[0]);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -75,7 +73,7 @@ function EditProfilePage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {/* <img src={profile.image} alt="Profile" /> */}
+
         <br />
         <button type="submit">Edit Profile</button>
         <button onClick={() => navigate(-1)}>Back</button>
