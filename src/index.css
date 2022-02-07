@@ -1,0 +1,148 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=JetBrains+Mono:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,300&family=PT+Sans:wght@400;700&family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --main-bg-color: #183e6d;
+  --secondary-bg-color: #092241;
+  --table-bg-color: #94a7c8;
+  --main-font-color: #6d6b6b;
+  --secondary-font-color: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  list-style: none;
+  color: black;
+}
+
+label {
+  display: block;
+}
+
+nav {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  padding: 0px 20px;
+  box-shadow: 0px 1px 2px gray;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+nav li {
+  list-style: none;
+  color: var(--secondary-font-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #94a7c8;
+  border-radius: 4px;
+}
+
+.AddTask {
+  background: #f9eec3;
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.EditProjectPage form,
+.AddTask form,
+.AddProject form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AddTask button,
+.AddProject button {
+  display: block;
+}
+
+.TaskCard {
+  background-color: #dfeef9;
+}
+.Navbar {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.Navbar button {
+  background: none;
+  color: var(--secondary-font-color);
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 0 50px;
+  font-weight: bold;
+}
+
+.profile-img-wrapper {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 35px;
+  border: 2px solid white;
+  background-color: rgba(211, 8, 8, 0.576);
+}
+
+.profile-img-wrapper a {
+  text-decoration: none;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.profile-img-wrapper a:hover {
+  color: white;
+}
+
+.logo-image {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-style: italic;
+  background-color: #fff;
+  transform: skew(9deg, 0deg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10%;
+}
+
+.logo-image img {
+  color: white;
+  height: 40px;
+}
+
+.logo-image:hover {
+  color: black;
+}
